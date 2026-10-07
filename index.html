@@ -1,69 +1,427 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YMD Lanes Inc. - Coming Soon</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background: url('imgs/background_xyz001.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #fff;
-            text-align: center;
-        }
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 60em;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.5em;
-            margin-bottom: 1em;
-        }
-        .logo {
-            margin-bottom: 1em;
-        }
-        .logo img {
-            max-width: 200px;
-            height: auto;
-        }
-        .logo h1 {
-            font-size: 50px;
-            font-family: 'Helvetica';
-        }
-        .contact-info {
-            font-size: 1.2em;
-            color: #ccc;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YMD Lanes Inc. | Dry Van, Reefer &amp; Flatbed Trucking in All 48 States</title>
+  <meta name="description" content="YMD Lanes Inc. is an asset-based trucking carrier in Algonquin, IL. Dry van, reefer and flatbed freight across all 48 states. USDOT 3296087 · MC-1044584.">
+  <link rel="canonical" href="https://ymdlanes.com/">
+  <meta name="theme-color" content="#0a1220">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YMD Lanes Inc.">
+  <meta property="og:title" content="YMD Lanes Inc. | Your freight, in the right lane.">
+  <meta property="og:description" content="Dry van, reefer and flatbed capacity across all 48 states, hauled by our own trucks and drivers.">
+  <meta property="og:url" content="https://ymdlanes.com/">
+  <meta property="og:image" content="https://ymdlanes.com/imgs/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "YMD Lanes Inc.",
+    "url": "https://ymdlanes.com/",
+    "logo": "https://ymdlanes.com/imgs/apple-touch-icon.png",
+    "email": "contact@ymdlanes.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Algonquin", "addressRegion": "IL", "addressCountry": "US" },
+    "areaServed": { "@type": "Country", "name": "United States" },
+    "identifier": [
+      { "@type": "PropertyValue", "propertyID": "USDOT", "value": "3296087" },
+      { "@type": "PropertyValue", "propertyID": "MC", "value": "MC-1044584" }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <div class="overlay">
-        <div class="logo">
-            <!-- Replace the src with your actual logo file path -->
-            <!-- <img src="ymdlanes_logo_small.jpg" alt="YMD Lanes Inc. Logo"> -->
-            <h1>YMD Lanes Inc.</h1>
-        </div>
-        <h1>Coming Soon</h1>
-        <p>Our website is currently under development. We're working hard to create a great experience for you.</p>
-        <p>Stay tuned for updates!</p>
-        <div class="contact-info">
-            <p>For inquiries, please contact us at:</p>
-            <p>Email: contact@ymdlanes.com</p>
-            <!-- <p>Phone: (123) 456-7890</p> -->
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 4h14v12H1zM15 9h4l3 3v4h-7"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+      <symbol id="i-radar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+      <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.2 17 22l-5-3-5 3 1.5-8.8"/></symbol>
+      <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></symbol>
+      <symbol id="i-hand" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="YMD Lanes, back to top">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect width="40" height="40" rx="9" fill="#F2A93B"/>
+          <path d="M15.5 6h9L33 34H7z" fill="#0A1220"/>
+          <path d="M20 9.5v3.5M20 17v5M20 26.5v5.5" stroke="#F2A93B" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-name">YMD <span>Lanes</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#services">Equipment</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+          <li><a href="#drivers">Drivers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#contact" data-inquiry="quote">Get a Quote</a>
+      </nav>
     </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <picture>
+          <source type="image/webp" srcset="imgs/hero-800.webp 800w, imgs/hero-1400.webp 1400w, imgs/hero-2400.webp 2400w" sizes="100vw">
+          <img src="imgs/hero-1600.jpg" alt="" width="1600" height="900" fetchpriority="high">
+        </picture>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Asset-based carrier &middot; Algonquin, IL</p>
+          <h1 id="hero-title">Your freight,<br> in the<br> <span class="accent">right lane.</span></h1>
+          <div class="lane" aria-hidden="true"></div>
+          <p class="hero-lede">Dry van, reefer and flatbed capacity across all 48 states. Your load moves on our own trucks with our own drivers, and one dispatcher stays with it from pickup to delivery.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact" data-inquiry="quote">Request a Quote <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="#drivers">Drive With Us</a>
+          </div>
+        </div>
+
+        <dl class="trust-strip">
+          <div><dt>USDOT</dt><dd>3296087</dd></div>
+          <div><dt>MC Number</dt><dd>MC-1044584</dd></div>
+          <div><dt>Coverage</dt><dd>All 48 States</dd></div>
+          <div><dt>Equipment</dt><dd>Van &middot; Reefer &middot; Flatbed</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Equipment -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker"><span>01</span> Equipment</p>
+          <h2 id="services-title">Capacity for what you ship.</h2>
+          <p class="section-lede">Full-truckload service on three trailer types, so one carrier can cover more of your freight.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card reveal">
+            <svg class="trailer" viewBox="0 0 96 40" aria-hidden="true">
+              <rect x="3" y="7" width="60" height="21" rx="1.5"/>
+              <path d="M63 28h3M66 28V13h12.5l6.5 7.5H90a2 2 0 0 1 2 2V28"/><path d="M70 16.5h7.5l3 3.5H70z"/>
+              <path d="M24 7v21M43 7v21" class="thin"/>
+              <circle cx="13" cy="31" r="3.5"/><circle cx="22" cy="31" r="3.5"/><circle cx="71" cy="31" r="3.5"/><circle cx="86" cy="31" r="3.5"/>
+            </svg>
+            <h3>Dry Van</h3>
+            <p>53' enclosed trailers for palletized and floor-loaded general freight. Clean, sealed and secure from dock to dock.</p>
+            <ul class="tags"><li>General freight</li><li>Palletized</li><li>Retail &amp; CPG</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <svg class="trailer" viewBox="0 0 96 40" aria-hidden="true">
+              <rect x="3" y="7" width="58" height="21" rx="1.5"/>
+              <rect x="61" y="9" width="4" height="10" rx="1"/>
+              <path d="M63 28h3M66 28V13h12.5l6.5 7.5H90a2 2 0 0 1 2 2V28"/><path d="M70 16.5h7.5l3 3.5H70z"/>
+              <path d="M32 11v13M26.4 14.25l11.2 6.5M26.4 20.75l11.2-6.5" class="thin"/>
+              <circle cx="13" cy="31" r="3.5"/><circle cx="22" cy="31" r="3.5"/><circle cx="71" cy="31" r="3.5"/><circle cx="86" cy="31" r="3.5"/>
+            </svg>
+            <h3>Reefer</h3>
+            <p>Temperature-controlled trailers for fresh, frozen and climate-sensitive loads, with temps monitored for the whole haul.</p>
+            <ul class="tags"><li>Frozen</li><li>Fresh &amp; produce</li><li>Temp-sensitive</li></ul>
+          </article>
+
+          <article class="card reveal">
+            <svg class="trailer" viewBox="0 0 96 40" aria-hidden="true">
+              <path d="M3 27h42v-4h18v5"/>
+              <rect x="7" y="15" width="33" height="12" rx="1"/>
+              <path d="M7 19h33M7 23h33M15 15v12M32 15v12" class="thin"/>
+              <path d="M63 28h3M66 28V13h12.5l6.5 7.5H90a2 2 0 0 1 2 2V28"/><path d="M70 16.5h7.5l3 3.5H70z"/>
+              <circle cx="13" cy="31" r="3.5"/><circle cx="22" cy="31" r="3.5"/><circle cx="71" cy="31" r="3.5"/><circle cx="86" cy="31" r="3.5"/>
+            </svg>
+            <h3>Flatbed &amp; Step Deck</h3>
+            <p>Open-deck capacity for steel, metal sheet, building materials and machinery. Properly secured, and tarped when needed.</p>
+            <ul class="tags"><li>Steel &amp; metal</li><li>Building materials</li><li>Machinery</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why us -->
+    <section class="section section-alt" id="why" aria-labelledby="why-title">
+      <div class="container why">
+        <header class="section-head why-head reveal">
+          <p class="kicker"><span>02</span> Why YMD Lanes</p>
+          <h2 id="why-title">Small fleet.<br>Big accountability.</h2>
+          <p class="section-lede">When you tender a load to YMD Lanes, it doesn't disappear into a broker's system. You work directly with the people who move it.</p>
+          <a class="btn btn-ghost" href="#contact" data-inquiry="quote">Get a Quote</a>
+        </header>
+
+        <div class="features">
+          <div class="feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span>
+            <h3>Our trucks, our drivers</h3>
+            <p>We're an asset-based carrier. Your load rides on a YMD Lanes truck with a driver we know by name.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-headset"/></svg></span>
+            <h3>One point of contact</h3>
+            <p>You talk to the same dispatcher from tender to delivery. No call centers, no runaround.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+            <h3>Safety &amp; compliance</h3>
+            <p>FMCSA-authorized and insured. We run safe, legal miles that protect your freight and everyone on the road with it.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-radar"/></svg></span>
+            <h3>Updates without chasing</h3>
+            <p>Proactive check calls from pickup to POD, so you always know where your freight is.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage -->
+    <section class="section" id="coverage" aria-labelledby="coverage-title">
+      <div class="container coverage">
+        <header class="section-head reveal">
+          <p class="kicker"><span>03</span> Coverage</p>
+          <h2 id="coverage-title">All 48 states.<br>One home base.</h2>
+          <p class="section-lede">We're based in Algonquin, Illinois, minutes from I-90 and in the middle of the country's freight network. From here we run regional and long-haul loads anywhere in the lower 48.</p>
+          <ul class="checklist">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Regional and long-haul, coast to coast</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Strong Midwest presence, nationwide reach</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Check calls from pickup to delivery</li>
+          </ul>
+        </header>
+
+        <figure class="map-panel reveal">
+          <svg class="map" viewBox="0 0 691 381" role="img" aria-labelledby="map-title">
+              <title id="map-title">Map of the contiguous United States with routes from Chicagoland to Seattle, Los Angeles, Phoenix, Denver, Dallas, Atlanta, Miami and New York</title>
+              <path class="map-dots" d="M516.6 362.7h0M319.8 350.4h0M516.6 350.4h0M528.9 350.4h0M307.5 338.1h0M319.8 338.1h0M504.3 338.1h0M516.6 338.1h0M528.9 338.1h0M307.5 325.8h0M319.8 325.8h0M504.3 325.8h0M516.6 325.8h0M295.2 313.5h0M307.5 313.5h0M319.8 313.5h0M332.1 313.5h0M504.3 313.5h0M516.6 313.5h0M246.0 301.2h0M258.3 301.2h0M282.9 301.2h0M295.2 301.2h0M307.5 301.2h0M319.8 301.2h0M332.1 301.2h0M344.4 301.2h0M356.7 301.2h0M393.6 301.2h0M405.9 301.2h0M418.2 301.2h0M492.0 301.2h0M504.3 301.2h0M516.6 301.2h0M246.0 288.9h0M258.3 288.9h0M270.6 288.9h0M282.9 288.9h0M295.2 288.9h0M307.5 288.9h0M319.8 288.9h0M332.1 288.9h0M344.4 288.9h0M356.7 288.9h0M369.0 288.9h0M381.3 288.9h0M393.6 288.9h0M405.9 288.9h0M418.2 288.9h0M430.5 288.9h0M442.8 288.9h0M467.4 288.9h0M479.7 288.9h0M492.0 288.9h0M504.3 288.9h0M233.7 276.6h0M246.0 276.6h0M258.3 276.6h0M270.6 276.6h0M282.9 276.6h0M295.2 276.6h0M307.5 276.6h0M319.8 276.6h0M332.1 276.6h0M344.4 276.6h0M356.7 276.6h0M369.0 276.6h0M381.3 276.6h0M393.6 276.6h0M405.9 276.6h0M418.2 276.6h0M430.5 276.6h0M442.8 276.6h0M455.1 276.6h0M467.4 276.6h0M479.7 276.6h0M492.0 276.6h0M504.3 276.6h0M516.6 276.6h0M147.6 264.3h0M159.9 264.3h0M172.2 264.3h0M184.5 264.3h0M196.8 264.3h0M209.1 264.3h0M221.4 264.3h0M233.7 264.3h0M246.0 264.3h0M258.3 264.3h0M270.6 264.3h0M282.9 264.3h0M295.2 264.3h0M307.5 264.3h0M319.8 264.3h0M332.1 264.3h0M344.4 264.3h0M356.7 264.3h0M369.0 264.3h0M381.3 264.3h0M393.6 264.3h0M405.9 264.3h0M418.2 264.3h0M430.5 264.3h0M442.8 264.3h0M455.1 264.3h0M467.4 264.3h0M479.7 264.3h0M492.0 264.3h0M504.3 264.3h0M516.6 264.3h0M98.4 252.0h0M110.7 252.0h0M123.0 252.0h0M135.3 252.0h0M147.6 252.0h0M159.9 252.0h0M172.2 252.0h0M184.5 252.0h0M196.8 252.0h0M209.1 252.0h0M221.4 252.0h0M233.7 252.0h0M246.0 252.0h0M258.3 252.0h0M270.6 252.0h0M282.9 252.0h0M295.2 252.0h0M307.5 252.0h0M319.8 252.0h0M332.1 252.0h0M344.4 252.0h0M356.7 252.0h0M369.0 252.0h0M381.3 252.0h0M393.6 252.0h0M405.9 252.0h0M418.2 252.0h0M430.5 252.0h0M442.8 252.0h0M455.1 252.0h0M467.4 252.0h0M479.7 252.0h0M492.0 252.0h0M504.3 252.0h0M516.6 252.0h0M528.9 252.0h0M86.1 239.7h0M98.4 239.7h0M110.7 239.7h0M123.0 239.7h0M135.3 239.7h0M147.6 239.7h0M159.9 239.7h0M172.2 239.7h0M184.5 239.7h0M196.8 239.7h0M209.1 239.7h0M221.4 239.7h0M233.7 239.7h0M246.0 239.7h0M258.3 239.7h0M270.6 239.7h0M282.9 239.7h0M295.2 239.7h0M307.5 239.7h0M319.8 239.7h0M332.1 239.7h0M344.4 239.7h0M356.7 239.7h0M369.0 239.7h0M381.3 239.7h0M393.6 239.7h0M405.9 239.7h0M418.2 239.7h0M430.5 239.7h0M442.8 239.7h0M455.1 239.7h0M467.4 239.7h0M479.7 239.7h0M492.0 239.7h0M504.3 239.7h0M516.6 239.7h0M528.9 239.7h0M541.2 239.7h0M61.5 227.4h0M73.8 227.4h0M86.1 227.4h0M98.4 227.4h0M110.7 227.4h0M123.0 227.4h0M135.3 227.4h0M147.6 227.4h0M159.9 227.4h0M172.2 227.4h0M184.5 227.4h0M196.8 227.4h0M209.1 227.4h0M221.4 227.4h0M233.7 227.4h0M246.0 227.4h0M258.3 227.4h0M270.6 227.4h0M282.9 227.4h0M295.2 227.4h0M307.5 227.4h0M319.8 227.4h0M332.1 227.4h0M344.4 227.4h0M356.7 227.4h0M369.0 227.4h0M381.3 227.4h0M393.6 227.4h0M405.9 227.4h0M418.2 227.4h0M430.5 227.4h0M442.8 227.4h0M455.1 227.4h0M467.4 227.4h0M479.7 227.4h0M492.0 227.4h0M504.3 227.4h0M516.6 227.4h0M528.9 227.4h0M541.2 227.4h0M553.5 227.4h0M565.8 227.4h0M49.2 215.1h0M61.5 215.1h0M73.8 215.1h0M86.1 215.1h0M98.4 215.1h0M110.7 215.1h0M123.0 215.1h0M135.3 215.1h0M147.6 215.1h0M159.9 215.1h0M172.2 215.1h0M184.5 215.1h0M196.8 215.1h0M209.1 215.1h0M221.4 215.1h0M233.7 215.1h0M246.0 215.1h0M258.3 215.1h0M270.6 215.1h0M282.9 215.1h0M295.2 215.1h0M307.5 215.1h0M319.8 215.1h0M332.1 215.1h0M344.4 215.1h0M356.7 215.1h0M369.0 215.1h0M381.3 215.1h0M393.6 215.1h0M405.9 215.1h0M418.2 215.1h0M430.5 215.1h0M442.8 215.1h0M455.1 215.1h0M467.4 215.1h0M479.7 215.1h0M492.0 215.1h0M504.3 215.1h0M516.6 215.1h0M528.9 215.1h0M541.2 215.1h0M553.5 215.1h0M565.8 215.1h0M578.1 215.1h0M49.2 202.8h0M61.5 202.8h0M73.8 202.8h0M86.1 202.8h0M98.4 202.8h0M110.7 202.8h0M123.0 202.8h0M135.3 202.8h0M147.6 202.8h0M159.9 202.8h0M172.2 202.8h0M184.5 202.8h0M196.8 202.8h0M209.1 202.8h0M221.4 202.8h0M233.7 202.8h0M246.0 202.8h0M258.3 202.8h0M270.6 202.8h0M282.9 202.8h0M295.2 202.8h0M307.5 202.8h0M319.8 202.8h0M332.1 202.8h0M344.4 202.8h0M356.7 202.8h0M369.0 202.8h0M381.3 202.8h0M393.6 202.8h0M405.9 202.8h0M418.2 202.8h0M430.5 202.8h0M442.8 202.8h0M455.1 202.8h0M467.4 202.8h0M479.7 202.8h0M492.0 202.8h0M504.3 202.8h0M516.6 202.8h0M528.9 202.8h0M541.2 202.8h0M553.5 202.8h0M565.8 202.8h0M578.1 202.8h0M36.9 190.5h0M49.2 190.5h0M61.5 190.5h0M73.8 190.5h0M86.1 190.5h0M98.4 190.5h0M110.7 190.5h0M123.0 190.5h0M135.3 190.5h0M147.6 190.5h0M159.9 190.5h0M172.2 190.5h0M184.5 190.5h0M196.8 190.5h0M209.1 190.5h0M221.4 190.5h0M233.7 190.5h0M246.0 190.5h0M258.3 190.5h0M270.6 190.5h0M282.9 190.5h0M295.2 190.5h0M307.5 190.5h0M319.8 190.5h0M332.1 190.5h0M344.4 190.5h0M356.7 190.5h0M369.0 190.5h0M381.3 190.5h0M393.6 190.5h0M405.9 190.5h0M418.2 190.5h0M430.5 190.5h0M442.8 190.5h0M455.1 190.5h0M467.4 190.5h0M479.7 190.5h0M492.0 190.5h0M504.3 190.5h0M516.6 190.5h0M528.9 190.5h0M541.2 190.5h0M553.5 190.5h0M565.8 190.5h0M578.1 190.5h0M36.9 178.2h0M49.2 178.2h0M61.5 178.2h0M73.8 178.2h0M86.1 178.2h0M98.4 178.2h0M110.7 178.2h0M123.0 178.2h0M135.3 178.2h0M147.6 178.2h0M159.9 178.2h0M172.2 178.2h0M184.5 178.2h0M196.8 178.2h0M209.1 178.2h0M221.4 178.2h0M233.7 178.2h0M246.0 178.2h0M258.3 178.2h0M270.6 178.2h0M282.9 178.2h0M295.2 178.2h0M307.5 178.2h0M319.8 178.2h0M332.1 178.2h0M344.4 178.2h0M356.7 178.2h0M369.0 178.2h0M381.3 178.2h0M393.6 178.2h0M405.9 178.2h0M418.2 178.2h0M430.5 178.2h0M442.8 178.2h0M455.1 178.2h0M467.4 178.2h0M479.7 178.2h0M492.0 178.2h0M504.3 178.2h0M516.6 178.2h0M528.9 178.2h0M541.2 178.2h0M553.5 178.2h0M565.8 178.2h0M578.1 178.2h0M24.6 165.9h0M36.9 165.9h0M49.2 165.9h0M61.5 165.9h0M73.8 165.9h0M86.1 165.9h0M98.4 165.9h0M110.7 165.9h0M123.0 165.9h0M135.3 165.9h0M147.6 165.9h0M159.9 165.9h0M172.2 165.9h0M184.5 165.9h0M196.8 165.9h0M209.1 165.9h0M221.4 165.9h0M233.7 165.9h0M246.0 165.9h0M258.3 165.9h0M270.6 165.9h0M282.9 165.9h0M295.2 165.9h0M307.5 165.9h0M319.8 165.9h0M332.1 165.9h0M344.4 165.9h0M356.7 165.9h0M369.0 165.9h0M381.3 165.9h0M393.6 165.9h0M405.9 165.9h0M418.2 165.9h0M430.5 165.9h0M442.8 165.9h0M455.1 165.9h0M467.4 165.9h0M479.7 165.9h0M492.0 165.9h0M504.3 165.9h0M516.6 165.9h0M528.9 165.9h0M541.2 165.9h0M553.5 165.9h0M565.8 165.9h0M578.1 165.9h0M590.4 165.9h0M24.6 153.6h0M36.9 153.6h0M49.2 153.6h0M61.5 153.6h0M73.8 153.6h0M86.1 153.6h0M98.4 153.6h0M110.7 153.6h0M123.0 153.6h0M135.3 153.6h0M147.6 153.6h0M159.9 153.6h0M172.2 153.6h0M184.5 153.6h0M196.8 153.6h0M209.1 153.6h0M221.4 153.6h0M233.7 153.6h0M246.0 153.6h0M258.3 153.6h0M270.6 153.6h0M282.9 153.6h0M295.2 153.6h0M307.5 153.6h0M319.8 153.6h0M332.1 153.6h0M344.4 153.6h0M356.7 153.6h0M369.0 153.6h0M381.3 153.6h0M393.6 153.6h0M405.9 153.6h0M418.2 153.6h0M430.5 153.6h0M442.8 153.6h0M455.1 153.6h0M467.4 153.6h0M479.7 153.6h0M492.0 153.6h0M504.3 153.6h0M516.6 153.6h0M528.9 153.6h0M541.2 153.6h0M553.5 153.6h0M565.8 153.6h0M578.1 153.6h0M590.4 153.6h0M12.3 141.3h0M24.6 141.3h0M36.9 141.3h0M49.2 141.3h0M61.5 141.3h0M73.8 141.3h0M86.1 141.3h0M98.4 141.3h0M110.7 141.3h0M123.0 141.3h0M135.3 141.3h0M147.6 141.3h0M159.9 141.3h0M172.2 141.3h0M184.5 141.3h0M196.8 141.3h0M209.1 141.3h0M221.4 141.3h0M233.7 141.3h0M246.0 141.3h0M258.3 141.3h0M270.6 141.3h0M282.9 141.3h0M295.2 141.3h0M307.5 141.3h0M319.8 141.3h0M332.1 141.3h0M344.4 141.3h0M356.7 141.3h0M369.0 141.3h0M381.3 141.3h0M393.6 141.3h0M405.9 141.3h0M418.2 141.3h0M430.5 141.3h0M442.8 141.3h0M455.1 141.3h0M467.4 141.3h0M479.7 141.3h0M492.0 141.3h0M504.3 141.3h0M516.6 141.3h0M528.9 141.3h0M541.2 141.3h0M553.5 141.3h0M565.8 141.3h0M578.1 141.3h0M590.4 141.3h0M12.3 129.0h0M24.6 129.0h0M36.9 129.0h0M49.2 129.0h0M61.5 129.0h0M73.8 129.0h0M86.1 129.0h0M98.4 129.0h0M110.7 129.0h0M123.0 129.0h0M135.3 129.0h0M147.6 129.0h0M159.9 129.0h0M172.2 129.0h0M184.5 129.0h0M196.8 129.0h0M209.1 129.0h0M221.4 129.0h0M233.7 129.0h0M246.0 129.0h0M258.3 129.0h0M270.6 129.0h0M282.9 129.0h0M295.2 129.0h0M307.5 129.0h0M319.8 129.0h0M332.1 129.0h0M344.4 129.0h0M356.7 129.0h0M369.0 129.0h0M381.3 129.0h0M393.6 129.0h0M405.9 129.0h0M418.2 129.0h0M430.5 129.0h0M442.8 129.0h0M455.1 129.0h0M467.4 129.0h0M479.7 129.0h0M492.0 129.0h0M504.3 129.0h0M516.6 129.0h0M528.9 129.0h0M541.2 129.0h0M553.5 129.0h0M565.8 129.0h0M578.1 129.0h0M590.4 129.0h0M602.7 129.0h0M615.0 129.0h0M12.3 116.7h0M24.6 116.7h0M36.9 116.7h0M49.2 116.7h0M61.5 116.7h0M73.8 116.7h0M86.1 116.7h0M98.4 116.7h0M110.7 116.7h0M123.0 116.7h0M135.3 116.7h0M147.6 116.7h0M159.9 116.7h0M172.2 116.7h0M184.5 116.7h0M196.8 116.7h0M209.1 116.7h0M221.4 116.7h0M233.7 116.7h0M246.0 116.7h0M258.3 116.7h0M270.6 116.7h0M282.9 116.7h0M295.2 116.7h0M307.5 116.7h0M319.8 116.7h0M332.1 116.7h0M344.4 116.7h0M356.7 116.7h0M369.0 116.7h0M381.3 116.7h0M393.6 116.7h0M405.9 116.7h0M418.2 116.7h0M430.5 116.7h0M455.1 116.7h0M467.4 116.7h0M479.7 116.7h0M492.0 116.7h0M528.9 116.7h0M541.2 116.7h0M553.5 116.7h0M565.8 116.7h0M578.1 116.7h0M590.4 116.7h0M602.7 116.7h0M615.0 116.7h0M627.3 116.7h0M639.6 116.7h0M12.3 104.4h0M24.6 104.4h0M36.9 104.4h0M49.2 104.4h0M61.5 104.4h0M73.8 104.4h0M86.1 104.4h0M98.4 104.4h0M110.7 104.4h0M123.0 104.4h0M135.3 104.4h0M147.6 104.4h0M159.9 104.4h0M172.2 104.4h0M184.5 104.4h0M196.8 104.4h0M209.1 104.4h0M221.4 104.4h0M233.7 104.4h0M246.0 104.4h0M258.3 104.4h0M270.6 104.4h0M282.9 104.4h0M295.2 104.4h0M307.5 104.4h0M319.8 104.4h0M332.1 104.4h0M344.4 104.4h0M356.7 104.4h0M369.0 104.4h0M381.3 104.4h0M393.6 104.4h0M405.9 104.4h0M418.2 104.4h0M430.5 104.4h0M467.4 104.4h0M479.7 104.4h0M492.0 104.4h0M541.2 104.4h0M553.5 104.4h0M565.8 104.4h0M578.1 104.4h0M590.4 104.4h0M602.7 104.4h0M615.0 104.4h0M627.3 104.4h0M639.6 104.4h0M12.3 92.1h0M24.6 92.1h0M36.9 92.1h0M49.2 92.1h0M61.5 92.1h0M73.8 92.1h0M86.1 92.1h0M98.4 92.1h0M110.7 92.1h0M123.0 92.1h0M135.3 92.1h0M147.6 92.1h0M159.9 92.1h0M172.2 92.1h0M184.5 92.1h0M196.8 92.1h0M209.1 92.1h0M221.4 92.1h0M233.7 92.1h0M246.0 92.1h0M258.3 92.1h0M270.6 92.1h0M282.9 92.1h0M295.2 92.1h0M307.5 92.1h0M319.8 92.1h0M332.1 92.1h0M344.4 92.1h0M356.7 92.1h0M369.0 92.1h0M381.3 92.1h0M393.6 92.1h0M405.9 92.1h0M418.2 92.1h0M430.5 92.1h0M467.4 92.1h0M479.7 92.1h0M492.0 92.1h0M553.5 92.1h0M565.8 92.1h0M578.1 92.1h0M590.4 92.1h0M602.7 92.1h0M615.0 92.1h0M627.3 92.1h0M639.6 92.1h0M12.3 79.8h0M24.6 79.8h0M36.9 79.8h0M49.2 79.8h0M61.5 79.8h0M73.8 79.8h0M86.1 79.8h0M98.4 79.8h0M110.7 79.8h0M123.0 79.8h0M135.3 79.8h0M147.6 79.8h0M159.9 79.8h0M172.2 79.8h0M184.5 79.8h0M196.8 79.8h0M209.1 79.8h0M221.4 79.8h0M233.7 79.8h0M246.0 79.8h0M258.3 79.8h0M270.6 79.8h0M282.9 79.8h0M295.2 79.8h0M307.5 79.8h0M319.8 79.8h0M332.1 79.8h0M344.4 79.8h0M356.7 79.8h0M369.0 79.8h0M381.3 79.8h0M393.6 79.8h0M405.9 79.8h0M418.2 79.8h0M430.5 79.8h0M442.8 79.8h0M467.4 79.8h0M479.7 79.8h0M492.0 79.8h0M578.1 79.8h0M590.4 79.8h0M602.7 79.8h0M615.0 79.8h0M627.3 79.8h0M639.6 79.8h0M651.9 79.8h0M12.3 67.5h0M24.6 67.5h0M36.9 67.5h0M49.2 67.5h0M61.5 67.5h0M73.8 67.5h0M86.1 67.5h0M98.4 67.5h0M110.7 67.5h0M123.0 67.5h0M135.3 67.5h0M147.6 67.5h0M159.9 67.5h0M172.2 67.5h0M184.5 67.5h0M196.8 67.5h0M209.1 67.5h0M221.4 67.5h0M233.7 67.5h0M246.0 67.5h0M258.3 67.5h0M270.6 67.5h0M282.9 67.5h0M295.2 67.5h0M307.5 67.5h0M319.8 67.5h0M332.1 67.5h0M344.4 67.5h0M356.7 67.5h0M369.0 67.5h0M381.3 67.5h0M393.6 67.5h0M405.9 67.5h0M418.2 67.5h0M430.5 67.5h0M442.8 67.5h0M467.4 67.5h0M479.7 67.5h0M639.6 67.5h0M651.9 67.5h0M664.2 67.5h0M676.5 67.5h0M24.6 55.2h0M36.9 55.2h0M49.2 55.2h0M61.5 55.2h0M73.8 55.2h0M86.1 55.2h0M98.4 55.2h0M110.7 55.2h0M123.0 55.2h0M135.3 55.2h0M147.6 55.2h0M159.9 55.2h0M172.2 55.2h0M184.5 55.2h0M196.8 55.2h0M209.1 55.2h0M221.4 55.2h0M233.7 55.2h0M246.0 55.2h0M258.3 55.2h0M270.6 55.2h0M282.9 55.2h0M295.2 55.2h0M307.5 55.2h0M319.8 55.2h0M332.1 55.2h0M344.4 55.2h0M356.7 55.2h0M369.0 55.2h0M381.3 55.2h0M393.6 55.2h0M405.9 55.2h0M418.2 55.2h0M430.5 55.2h0M442.8 55.2h0M455.1 55.2h0M467.4 55.2h0M651.9 55.2h0M664.2 55.2h0M12.3 42.9h0M24.6 42.9h0M36.9 42.9h0M49.2 42.9h0M61.5 42.9h0M73.8 42.9h0M86.1 42.9h0M98.4 42.9h0M110.7 42.9h0M123.0 42.9h0M135.3 42.9h0M147.6 42.9h0M159.9 42.9h0M172.2 42.9h0M184.5 42.9h0M196.8 42.9h0M209.1 42.9h0M221.4 42.9h0M233.7 42.9h0M246.0 42.9h0M258.3 42.9h0M270.6 42.9h0M282.9 42.9h0M295.2 42.9h0M307.5 42.9h0M319.8 42.9h0M332.1 42.9h0M344.4 42.9h0M356.7 42.9h0M369.0 42.9h0M381.3 42.9h0M418.2 42.9h0M430.5 42.9h0M442.8 42.9h0M651.9 42.9h0M664.2 42.9h0M12.3 30.6h0M24.6 30.6h0M36.9 30.6h0M49.2 30.6h0M61.5 30.6h0M73.8 30.6h0M86.1 30.6h0M98.4 30.6h0M110.7 30.6h0M123.0 30.6h0M135.3 30.6h0M147.6 30.6h0M159.9 30.6h0M172.2 30.6h0M184.5 30.6h0M196.8 30.6h0M209.1 30.6h0M221.4 30.6h0M233.7 30.6h0M246.0 30.6h0M258.3 30.6h0M270.6 30.6h0M282.9 30.6h0M295.2 30.6h0M307.5 30.6h0M319.8 30.6h0M332.1 30.6h0M344.4 30.6h0M356.7 30.6h0M369.0 30.6h0M381.3 30.6h0M393.6 30.6h0M405.9 30.6h0M12.3 18.3h0M24.6 18.3h0M36.9 18.3h0M49.2 18.3h0M61.5 18.3h0M73.8 18.3h0M86.1 18.3h0M98.4 18.3h0M110.7 18.3h0M123.0 18.3h0M135.3 18.3h0M147.6 18.3h0M159.9 18.3h0M172.2 18.3h0M184.5 18.3h0M196.8 18.3h0M209.1 18.3h0M221.4 18.3h0M233.7 18.3h0M246.0 18.3h0M258.3 18.3h0M270.6 18.3h0M282.9 18.3h0M295.2 18.3h0M307.5 18.3h0M319.8 18.3h0M332.1 18.3h0M344.4 18.3h0M356.7 18.3h0M369.0 18.3h0M381.3 18.3h0"/>
+              <path class="route" style="--i:0" d="M433.8 111.4Q249.1 -9.7 31.9 30.0"/><path class="route" style="--i:1" d="M433.8 111.4Q232.7 101.7 80.4 233.3"/><path class="route" style="--i:2" d="M433.8 111.4Q267.0 120.6 152.5 242.2"/><path class="route" style="--i:3" d="M433.8 111.4Q327.7 90.5 236.4 148.5"/><path class="route" style="--i:4" d="M433.8 111.4Q355.5 161.6 333.3 252.0"/><path class="route" style="--i:5" d="M433.8 111.4Q482.1 165.4 479.9 237.8"/><path class="route" style="--i:6" d="M433.8 111.4Q530.8 215.1 529.5 357.0"/><path class="route" style="--i:7" d="M433.8 111.4Q522.7 88.7 602.8 133.5"/>
+              <circle class="pin" cx="31.9" cy="30.0" r="3.2"><title>Seattle</title></circle><circle class="pin" cx="80.4" cy="233.3" r="3.2"><title>Los Angeles</title></circle><circle class="pin" cx="152.5" cy="242.2" r="3.2"><title>Phoenix</title></circle><circle class="pin" cx="236.4" cy="148.5" r="3.2"><title>Denver</title></circle><circle class="pin" cx="333.3" cy="252.0" r="3.2"><title>Dallas</title></circle><circle class="pin" cx="479.9" cy="237.8" r="3.2"><title>Atlanta</title></circle><circle class="pin" cx="529.5" cy="357.0" r="3.2"><title>Miami</title></circle><circle class="pin" cx="602.8" cy="133.5" r="3.2"><title>New York</title></circle>
+              <circle class="hub-pulse" cx="433.8" cy="111.4" r="6"/>
+              <circle class="hub" cx="433.8" cy="111.4" r="5.5"/>
+            </svg>
+          <figcaption><span class="legend-hub" aria-hidden="true"></span> Chicagoland base <span class="legend-route" aria-hidden="true"></span> Sample lanes</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Drivers -->
+    <section class="section section-alt drivers-section" id="drivers" aria-labelledby="drivers-title">
+      <div class="container drivers">
+        <div class="drivers-main">
+          <header class="section-head reveal">
+            <p class="kicker"><span>04</span> Drivers</p>
+            <h2 id="drivers-title">Drive with YMD Lanes.</h2>
+            <p class="section-lede">We're a small fleet, so you're a name here, not a truck number. If you're a professional CDL-A driver looking for a carrier that has your back, we'd like to hear from you.</p>
+          </header>
+
+          <div class="perks">
+            <div class="perk reveal">
+              <svg class="icon" aria-hidden="true"><use href="#i-wrench"/></svg>
+              <div><h3>Well-maintained trucks</h3><p>Equipment serviced on schedule, so you drive instead of waiting on repairs.</p></div>
+            </div>
+            <div class="perk reveal">
+              <svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>
+              <div><h3>Steady freight</h3><p>Dry van, reefer and flatbed loads across the lower 48.</p></div>
+            </div>
+            <div class="perk reveal">
+              <svg class="icon" aria-hidden="true"><use href="#i-headset"/></svg>
+              <div><h3>Dispatch that listens</h3><p>Real people who plan loads with you, not around you.</p></div>
+            </div>
+            <div class="perk reveal">
+              <svg class="icon" aria-hidden="true"><use href="#i-hand"/></svg>
+              <div><h3>Respect on the road</h3><p>A small-fleet culture where your input actually counts.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="req-card reveal" aria-labelledby="req-title">
+          <p class="req-tag">Now hiring</p>
+          <h3 id="req-title">What we look for</h3>
+          <ul class="checklist">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Valid Class A CDL</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Safe driving record</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Able to pass DOT physical &amp; drug screen</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Flatbed or reefer experience a plus</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#contact" data-inquiry="driver">Apply to Drive <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <header class="section-head contact-head reveal">
+          <p class="kicker"><span>05</span> Contact</p>
+          <h2 id="contact-title">Let's move your freight.</h2>
+          <p class="section-lede">Tell us about your load and we'll get back to you with a quote. Drivers can use the same form to apply.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <div><span class="contact-label">Email</span><a href="mailto:contact@ymdlanes.com">contact@ymdlanes.com</a></div>
+            </li>
+            <!-- TODO: add the dispatch phone number, then uncomment
+            <li>
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+              <div><span class="contact-label">Dispatch</span><a href="tel:+10000000000">(000) 000-0000</a></div>
+            </li>
+            -->
+            <li>
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div><span class="contact-label">Home base</span>Algonquin, IL (Chicagoland)</div>
+            </li>
+            <li>
+              <span class="feature-icon"><svg class="icon" aria-hidden="true"><use href="#i-badge"/></svg></span>
+              <div><span class="contact-label">Authority</span><a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&amp;query_type=queryCarrierSnapshot&amp;query_param=USDOT&amp;query_string=3296087" target="_blank" rel="noopener">USDOT 3296087 &middot; MC-1044584</a></div>
+            </li>
+          </ul>
+        </header>
+
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID (formspree.io). Until then, the form opens the visitor's email app instead. -->
+        <form class="form-card reveal" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <fieldset class="seg">
+            <legend class="sr-only">I'm reaching out about</legend>
+            <label><input type="radio" name="inquiry" value="Freight quote" data-mode="quote" checked><span>Freight quote</span></label>
+            <label><input type="radio" name="inquiry" value="Driver application" data-mode="driver"><span>Apply to drive</span></label>
+            <label><input type="radio" name="inquiry" value="General question" data-mode="general"><span>Other</span></label>
+          </fieldset>
+
+          <input type="hidden" name="_subject" value="New freight quote request: ymdlanes.com">
+          <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+
+          <div class="grid-2">
+            <div class="field"><label for="f-name">Full name *</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+            <div class="field" data-show="quote general"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+            <div class="field"><label for="f-email">Email *</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+
+          <fieldset class="mode-fields" data-mode="quote">
+            <legend class="sr-only">Load details</legend>
+            <div class="grid-2">
+              <div class="field"><label for="f-origin">Pickup city, state *</label><input id="f-origin" name="origin" type="text" placeholder="e.g. Elgin, IL" required></div>
+              <div class="field"><label for="f-dest">Delivery city, state *</label><input id="f-dest" name="destination" type="text" placeholder="e.g. Dallas, TX" required></div>
+              <div class="field">
+                <label for="f-equipment">Equipment</label>
+                <select id="f-equipment" name="equipment">
+                  <option>Dry van</option>
+                  <option>Reefer</option>
+                  <option>Flatbed / step deck</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field"><label for="f-date">Pickup date</label><input id="f-date" name="pickup_date" type="date"></div>
+            </div>
+            <div class="field"><label for="f-commodity">Commodity &amp; weight</label><input id="f-commodity" name="commodity" type="text" placeholder="e.g. Steel coils, 42,000 lbs"></div>
+          </fieldset>
+
+          <fieldset class="mode-fields" data-mode="driver" disabled hidden>
+            <legend class="sr-only">Driver details</legend>
+            <div class="grid-2">
+              <div class="field">
+                <label for="f-exp">CDL-A experience *</label>
+                <select id="f-exp" name="cdl_experience" required>
+                  <option value="">Select…</option>
+                  <option>Less than 1 year</option>
+                  <option>1–2 years</option>
+                  <option>3–5 years</option>
+                  <option>5+ years</option>
+                </select>
+              </div>
+              <div class="field"><label for="f-trailers">Trailer experience</label><input id="f-trailers" name="trailer_experience" type="text" placeholder="e.g. Dry van, flatbed"></div>
+            </div>
+          </fieldset>
+
+          <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" rows="4" placeholder="Anything else we should know?"></textarea></div>
+
+          <button class="btn btn-primary btn-block" type="submit"><span class="btn-label">Request a Quote</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="YMD Lanes, back to top">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <rect width="40" height="40" rx="9" fill="#F2A93B"/>
+            <path d="M15.5 6h9L33 34H7z" fill="#0A1220"/>
+            <path d="M20 9.5v3.5M20 17v5M20 26.5v5.5" stroke="#F2A93B" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-name">YMD <span>Lanes</span></span>
+        </a>
+        <p>An asset-based trucking carrier moving dry van, reefer and flatbed freight across all 48 states from our home base in Algonquin, Illinois.</p>
+      </div>
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="#services">Equipment</a></li>
+          <li><a href="#why">Why YMD Lanes</a></li>
+          <li><a href="#coverage">Coverage</a></li>
+          <li><a href="#drivers">Drive With Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-links">
+          <li><a href="mailto:contact@ymdlanes.com">contact@ymdlanes.com</a></li>
+          <li>Algonquin, IL</li>
+          <li><a href="#contact" data-inquiry="quote">Request a quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-title">Authority</h3>
+        <ul class="footer-links">
+          <li>USDOT 3296087</li>
+          <li>MC-1044584</li>
+          <li><a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&amp;query_type=queryCarrierSnapshot&amp;query_param=USDOT&amp;query_string=3296087" target="_blank" rel="noopener">FMCSA SAFER snapshot</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> YMD Lanes Inc. All rights reserved.</p>
+      <div class="lane lane-sm" aria-hidden="true"></div>
+    </div>
+  </footer>
 </body>
 </html>
